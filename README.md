@@ -63,7 +63,7 @@
 ### Project Index
 
 <details open>
-	<summary><b><code>C:\USERS\CAOMI\GITHUB\ML_FINAL_PROJECT/</code></b></summary>
+	<summary><b><code>C:\USERS\GITHUB\ML_FINAL_PROJECT/</code></b></summary>
 	<!-- __root__ Submodule -->
 	<details>
 		<summary><b>__root__</b></summary>
