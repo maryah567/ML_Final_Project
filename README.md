@@ -3,7 +3,7 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="https://www.google.com/search?sca_esv=85875b56016a6e07&rlz=1C1MMCH_enUS1120US1120&sxsrf=AE3TifPKyAU9ojNPK5NDyCnhwc1mqv1aFg:1764891295746&udm=2&fbs=AIIjpHyNLa7NbKa1H9FnKAJNsjCPuuyZ8axF70qppVREZw12J16j6TEYGEwZz6y4Q0FA_xMYeajm3AQJueG4kgRvMz5m4gb8lReUYTx4dpKIdUhuq5lu93rZe3kiiX8CSRF2VIbYCRZTz2LzFKnagNQlOq2eBxPW3ToMI7QeTo1IlKzo7MN52uuVexRwX27JrGdkG3ArRllGP1TpVkvshKa3bSYyUrJ3rYQrkJ9bn1QzeOvcG3bCVswwNzJ2Pcu8bcteU9DmnMet&q=M%E1%BA%A1chine+learning&sa=X&ved=2ahUKEwj87P-1jKWRAxUD4skDHU7hNAwQtKgLegQIFxAB&biw=1536&bih=826&dpr=1.25#sv=CAMSVhoyKhBlLXFRXzhHZ3RDdlozaXlNMg5xUV84R2d0Q3ZaM2l5TToOcGQ4VTBBLXVFbDZ0X00gBCocCgZtb3NhaWMSEGUtcVFfOEdndEN2WjNpeU0YADABGAcgmYfX7gMwAkoKCAIQAhgCIAIoAg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<img src="https://shiftasia.com/community/content/images/2025/06/ml.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
 
 # ML_FINAL_PROJECT
 
