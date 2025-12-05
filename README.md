@@ -1,19 +1,12 @@
 <div id="top">
 
-<!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="https://shiftasia.com/community/content/images/2025/06/ml.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<img src="https://shiftasia.com/community/content/images/2025/06/ml.png" width="30%" alt="Project Logo"/>
 
 # ML_FINAL_PROJECT
 
-<em></em>
-
-<!-- BADGES -->
-<!-- local repository, no metadata badges. -->
-
-<em>Built with the tools and technologies:</em>
-
+**Machine Learning Final Project – Multi-Dataset Classification & Spam Email Detection**
 
 </div>
 <br>
@@ -21,17 +14,10 @@
 ---
 
 ## Table of Contents
-
-- [Table of Contents](#table-of-contents)
 - [Overview](#overview)
 - [Features](#features)
 - [Project Structure](#project-structure)
-    - [Project Index](#project-index)
 - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -41,13 +27,53 @@
 
 ## Overview
 
+This project implements two major machine learning tasks:
 
+### 🔹 1) Multi-Dataset Classification  
+We classify unseen test samples from **four unique datasets** with different:
+- Dimensions  
+- Numbers of classes  
+- Samples vs. features imbalance  
+
+Pipeline includes:
+- Missing value imputation  
+- Scaling and normalization  
+- Dimensionality reduction (SelectKBest / PCA)  
+- Optimal model selection per dataset  
+
+**Best results:**
+- Dataset 1 → **96%**
+- Dataset 2 → **91%**
+- Dataset 3 → ~72%
+- Dataset 4 → ~53% (feature-limited dataset)
+
+---
+
+### 🔹 2) Spam Email Detection  
+Goal: classify messages as **Spam** or **Ham** using NLP.
+
+Pipeline includes:
+- Text cleaning
+- TF-IDF vectorization (20,000 features)
+- Model benchmarking (NB, DT, NN, SVM)
+- Hyperparameter tuning
+
+**Best tuned model:** **SVM**
+- **AUC: 0.9965**
+- **F1 Score: 0.943**
+- **Precision: 0.951**
+- **Recall: 0.936**
 
 ---
 
 ## Features
 
-<code>❯ REPLACE-ME</code>
+✔ Adaptive preprocessing  
+✔ SelectKBest & PCA  
+✔ RandomForest / KNN / SVM / Ensembles  
+✔ TF-IDF NLP text modeling  
+✔ Cross-validation + tuning  
+✔ Prediction outputs for submission  
 
 ---
 
@@ -55,154 +81,75 @@
 
 ```sh
 └── ML_FINAL_PROJECT/
-    ├── classification.ipynb
-    ├── README.md
-    └── spam_detection.ipynb
-```
+    ├── classification.ipynb     # Multi-dataset classification pipeline
+    ├── spam_detection.ipynb     # NLP spam filtering pipeline
+    ├── Final_Report_3Pages.docx # Project report
+    └── README.md
+Project Index
+<details open> <summary><b><code>C:\USERS\GITHUB\ML_FINAL_PROJECT/</code></b></summary> <blockquote> <table> <thead> <tr> <th>File Name</th> <th>Summary</th> </tr> </thead> <tr> <td><b>classification.ipynb</b></td> <td>Classification using imputation, scaling, PCA/SelectKBest, tuned models</td> </tr> <tr> <td><b>spam_detection.ipynb</b></td> <td>TF-IDF text processing, multiple ML models, SVM tuning</td> </tr> </table> </blockquote> </details>
+Getting Started
+Prerequisites
+Python 3.x
 
-### Project Index
+Jupyter Notebook
 
-<details open>
-	<summary><b><code>C:\USERS\GITHUB\ML_FINAL_PROJECT/</code></b></summary>
-	<!-- __root__ Submodule -->
-	<details>
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ __root__</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='C:\Users\caomi\GitHub\ML_FINAL_PROJECT/blob/master/classification.ipynb'>classification.ipynb</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='C:\Users\caomi\GitHub\ML_FINAL_PROJECT/blob/master/spam_detection.ipynb'>spam_detection.ipynb</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-			</table>
-		</blockquote>
-	</details>
+scikit-learn, pandas, numpy, nltk
+
+Installation
+sh
+Copy code
+git clone <REPO-URL>
+cd ML_FINAL_PROJECT
+pip install -r requirements.txt
+Usage
+sh
+Copy code
+jupyter notebook
+Open notebooks:
+
+classification.ipynb
+
+spam_detection.ipynb
+
+Testing
+All validation/testing done inside notebook execution.
+
+Roadmap
+ Classification pipeline implementation
+
+ Spam detection pipeline implementation
+
+ Automated hyperparameter search
+
+ Deploy via REST API
+
+ Dashboard reporting
+
+Contributing
+Contributions are welcome.
+
+<details closed> <summary>Contributing Guidelines</summary>
+Fork repository
+
+Create new feature branch
+
+Implement and test locally
+
+Push and submit PR
+
 </details>
+License
+Distributed under the MIT License.
+See LICENSE for more information.
 
----
+Acknowledgments
+Team: Harry Cao, Maria Ferdous, Son Nguyen
 
-## Getting Started
+Machine Learning Course Project
 
-### Prerequisites
-
-This project requires the following dependencies:
-
-- **Programming Language:** JupyterNotebook
-
-### Installation
-
-Build ML_FINAL_PROJECT from the source and intsall dependencies:
-
-1. **Clone the repository:**
-
-    ```sh
-    ❯ git clone ../ML_FINAL_PROJECT
-    ```
-
-2. **Navigate to the project directory:**
-
-    ```sh
-    ❯ cd ML_FINAL_PROJECT
-    ```
-
-3. **Install the dependencies:**
-
-echo 'INSERT-INSTALL-COMMAND-HERE'
-
-### Usage
-
-Run the project with:
-
-echo 'INSERT-RUN-COMMAND-HERE'
-
-### Testing
-
-Ml_final_project uses the {__test_framework__} test framework. Run the test suite with:
-
-echo 'INSERT-TEST-COMMAND-HERE'
-
----
-
-## Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
-
-## Contributing
-
-- **💬 [Join the Discussions](https://LOCAL/GitHub/ML_FINAL_PROJECT/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL/GitHub/ML_FINAL_PROJECT/issues)**: Submit bugs found or log feature requests for the `ML_FINAL_PROJECT` project.
-- **💡 [Submit Pull Requests](https://LOCAL/GitHub/ML_FINAL_PROJECT/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your LOCAL account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone C:\Users\caomi\GitHub\ML_FINAL_PROJECT
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to LOCAL**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="left">
-   <a href="https://LOCAL{/GitHub/ML_FINAL_PROJECT/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=GitHub/ML_FINAL_PROJECT">
-   </a>
-</p>
-</details>
-
----
-
-## License
-
-Ml_final_project is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## Acknowledgments
-
-- Credit `contributors`, `inspiration`, `references`, etc.
+Scikit-learn & NLP toolkits
 
 <div align="right">
 
-[![][back-to-top]](#top)
 
 </div>
-
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
-
-
----
