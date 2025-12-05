@@ -65,7 +65,7 @@ conda install scikit-learn nltk pandas numpy
 
 ---
 
-## 🏁 How to Run Part 1 — Classification
+## How to Run Part 1 — Classification
 
 1) Open the terminal and launch Jupyter:
 
@@ -150,5 +150,5 @@ Final_Report_3Pages.docx
 
 ---
 
-## ✔ Author
+## Author
 Son Nguyen, Harry Cao, Maria Ferdous
