@@ -1,155 +1,154 @@
-<div id="top">
+# ML Final Project – How to Run the Code
 
-<div align="center">
+This repository contains source code and prediction outputs for our Machine Learning final project:
 
-<img src="https://shiftasia.com/community/content/images/2025/06/ml.png" width="30%" alt="Project Logo"/>
+- **Part 1 – Multi-Dataset Classification**
+- **Part 2 – Spam Email Detection**
 
-# ML_FINAL_PROJECT
-
-**Machine Learning Final Project – Multi-Dataset Classification & Spam Email Detection**
-
-</div>
-<br>
+Both parts are implemented in Jupyter Notebooks and produce the required `.txt` prediction files for submission.
 
 ---
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## 🚀 Folder Structure (Matches Project Setup)
+
+```
+ML PROJECT/
+├── classification/
+│   ├── TestData1.txt
+│   ├── TestData2.txt
+│   ├── TestData3.txt
+│   ├── TestData4.txt
+│   ├── TrainData1.txt
+│   ├── TrainData2.txt
+│   ├── TrainData3.txt
+│   ├── TrainData4.txt
+│   ├── TrainLabel1.txt
+│   ├── TrainLabel2.txt
+│   ├── TrainLabel3.txt
+│   ├── TrainLabel4.txt
+│   ├── classification.ipynb
+│   ├── NguyenClassification1.txt
+│   ├── NguyenClassification2.txt
+│   ├── NguyenClassification3.txt
+│   ├── NguyenClassification4.txt
+│
+├── Spam Email Detection/
+│   ├── spam_test.csv
+│   ├── spam_train1.csv
+│   ├── spam_train2.csv
+│   ├── NguyenSpam.txt
+│
+├── spam_detection.ipynb
+├── Final_Report_3Pages.docx
+└── README.md   (this file)
+```
 
 ---
 
-## Overview
+## 🧰 Requirements
 
-This project implements two major machine learning tasks:
+You need:
 
-### 🔹 1) Multi-Dataset Classification  
-We classify unseen test samples from **four unique datasets** with different:
-- Dimensions  
-- Numbers of classes  
-- Samples vs. features imbalance  
+- Python 3.x  
+- Jupyter Notebook  
+- Install required libraries:
 
-Pipeline includes:
-- Missing value imputation  
-- Scaling and normalization  
-- Dimensionality reduction (SelectKBest / PCA)  
-- Optimal model selection per dataset  
+```bash
+pip install numpy pandas scikit-learn nltk
+```
 
-**Best results:**
-- Dataset 1 → **96%**
-- Dataset 2 → **91%**
-- Dataset 3 → ~72%
-- Dataset 4 → ~53% (feature-limited dataset)
+If using Anaconda:
+
+```bash
+conda install scikit-learn nltk pandas numpy
+```
 
 ---
 
-### 🔹 2) Spam Email Detection  
-Goal: classify messages as **Spam** or **Ham** using NLP.
+## 🏁 How to Run Part 1 — Classification
 
-Pipeline includes:
-- Text cleaning
-- TF-IDF vectorization (20,000 features)
-- Model benchmarking (NB, DT, NN, SVM)
-- Hyperparameter tuning
+1) Open terminal and launch Jupyter:
 
-**Best tuned model:** **SVM**
-- **AUC: 0.9965**
-- **F1 Score: 0.943**
-- **Precision: 0.951**
-- **Recall: 0.936**
-
----
-
-## Features
-
-✔ Adaptive preprocessing  
-✔ SelectKBest & PCA  
-✔ RandomForest / KNN / SVM / Ensembles  
-✔ TF-IDF NLP text modeling  
-✔ Cross-validation + tuning  
-✔ Prediction outputs for submission  
-
----
-
-## Project Structure
-
-```sh
-└── ML_FINAL_PROJECT/
-    ├── classification.ipynb     # Multi-dataset classification pipeline
-    ├── spam_detection.ipynb     # NLP spam filtering pipeline
-    ├── Final_Report_3Pages.docx # Project report
-    └── README.md
-Project Index
-<details open> <summary><b><code>C:\USERS\GITHUB\ML_FINAL_PROJECT/</code></b></summary> <blockquote> <table> <thead> <tr> <th>File Name</th> <th>Summary</th> </tr> </thead> <tr> <td><b>classification.ipynb</b></td> <td>Classification using imputation, scaling, PCA/SelectKBest, tuned models</td> </tr> <tr> <td><b>spam_detection.ipynb</b></td> <td>TF-IDF text processing, multiple ML models, SVM tuning</td> </tr> </table> </blockquote> </details>
-Getting Started
-Prerequisites
-Python 3.x
-
-Jupyter Notebook
-
-scikit-learn, pandas, numpy, nltk
-
-Installation
-sh
-Copy code
-git clone <REPO-URL>
-cd ML_FINAL_PROJECT
-pip install -r requirements.txt
-Usage
-sh
-Copy code
+```bash
 jupyter notebook
-Open notebooks:
+```
 
-classification.ipynb
+2) Open:
 
+```
+classification/classification.ipynb
+```
+
+3) Ensure dataset files are already located inside the `classification/` folder.
+
+4) Run all cells:
+
+```
+Kernel → Restart & Run All
+```
+
+5) At the end, prediction output files appear automatically:
+
+```
+NguyenClassification1.txt
+NguyenClassification2.txt
+NguyenClassification3.txt
+NguyenClassification4.txt
+```
+
+---
+
+## 🏁 How to Run Part 2 — Spam Detection
+
+1) Launch:
+
+```bash
+jupyter notebook
+```
+
+2) Open:
+
+```
 spam_detection.ipynb
+```
 
-Testing
-All validation/testing done inside notebook execution.
+3) Ensure dataset files are inside:
 
-Roadmap
- Classification pipeline implementation
+```
+Spam Email Detection/
+    spam_train1.csv
+    spam_train2.csv
+    spam_test.csv
+```
 
- Spam detection pipeline implementation
+4) Run all cells:
 
- Automated hyperparameter search
+```
+Kernel → Restart & Run All
+```
 
- Deploy via REST API
+5) Output generated:
 
- Dashboard reporting
+```
+NguyenSpam.txt
+```
 
-Contributing
-Contributions are welcome.
+---
 
-<details closed> <summary>Contributing Guidelines</summary>
-Fork repository
+## 📦 Final Submission Files
 
-Create new feature branch
+Submit:
 
-Implement and test locally
+```
+NguyenClassification1.txt
+NguyenClassification2.txt
+NguyenClassification3.txt
+NguyenClassification4.txt
+NguyenSpam.txt
+Final_Report_3Pages.docx
+```
 
-Push and submit PR
+---
 
-</details>
-License
-Distributed under the MIT License.
-See LICENSE for more information.
-
-Acknowledgments
-Team: Harry Cao, Maria Ferdous, Son Nguyen
-
-Machine Learning Course Project
-
-Scikit-learn & NLP toolkits
-
-<div align="right">
-
-
-</div>
+## ✔ Author
+Son Nguyen
